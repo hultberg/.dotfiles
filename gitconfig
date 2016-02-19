@@ -1,0 +1,14 @@
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	st = status
+[push]
+	default = simple
+[core]
+	editor = vim
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[merge]
+	tool = diff-so-fancy
+[mergetool "diff-to-fancy"]
+	cmd = diff-so-fancy
