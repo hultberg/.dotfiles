@@ -20,6 +20,9 @@ Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'SirVer/ultisnips'
 Plugin 'mattn/emmet-vim'
+Plugin 'posva/vim-vue'
+Plugin 'lumiliet/vim-twig'
+Plugin 'wakatime/vim-wakatime'
 
 " Vundle end
 call vundle#end()

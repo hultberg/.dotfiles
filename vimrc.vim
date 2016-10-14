@@ -1,6 +1,8 @@
 " Import plugins
 source ~/.vim/plugins.vim
 
+set shell=/bin/bash
+
 syntax on
 
 set backspace=indent,eol,start
@@ -8,6 +10,9 @@ let mapleader=','
 set nonumber
 set autowriteall
 set complete=.,w,b,u
+
+set visualbell
+set t_vb=
 
 " Show matching bracet
 set showmatch
@@ -37,9 +42,9 @@ set incsearch
 
 " -------------- Mappings --------------
 
-inoremap { {}<esc>i
-inoremap [ []<esc>i
-inoremap ( ()<esc>i
+"inoremap { {}<esc>i
+"inoremap [ []<esc>i
+"inoremap ( ()<esc>i
 
 " Go to end of line
 nmap <Leader><Leader>e $
@@ -64,8 +69,10 @@ nmap <Leader>n :NERDTreeToggle<cr>
 " Remove search highlight
 nmap <Leader><space> :nohlsearch<cr>
 
-" Map symbols
-nmap <C-R> :CtrlPBufTag<cr>
+" Run gulp
+nmap <Leader>gu :!gulp<cr>
+nmap <Leader>gs :!gulp style<cr>
+nmap <Leader>gw :!gulp webpack:local<cr>
 
 " Map recent used
 nmap <C-E> :CtrlPMRUFiles<cr>
@@ -96,11 +103,11 @@ set tabstop=4
 "/
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:15,result:15'
 
-if exists("g:ctrlp_user_command")
-	unlet g:ctrlp_user_command
-endif
-
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules,*/bower_components
+nmap <C-r> :CtrlPBufTag<cr>
+nmap <C-e> :CtrlPMRUFiles<cr>
+nmap <Leader>f :tag<space>
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+let g:ctrlp_show_hidden = 1
 
 "/
 "/ NERDTree
@@ -110,9 +117,9 @@ let NERDTreeHijackNetrw = 0
 "/
 "/ Greplace
 "/
-set grepprg=arg
+"set grepprg=arg
 
-let g:grep_cmd_opts = '--line-numbers --noheading'
+"let g:grep_cmd_opts = '--line-numbers --noheading'
 
 
 "/
