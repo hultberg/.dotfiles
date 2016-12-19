@@ -42,10 +42,6 @@ set incsearch
 
 " -------------- Mappings --------------
 
-"inoremap { {}<esc>i
-"inoremap [ []<esc>i
-"inoremap ( ()<esc>i
-
 " Go to end of line
 nmap <Leader><Leader>e $
 nmap <Leader><Leader>s 0
@@ -64,7 +60,7 @@ nmap <Leader>w :tabclose<cr>
 nmap <Leader>t :tabedit<cr>
 
 " NERDTree
-nmap <Leader>n :NERDTreeToggle<cr>
+nmap <Leader>nt :NERDTreeToggle<cr>
 
 " Remove search highlight
 nmap <Leader><space> :nohlsearch<cr>
@@ -73,6 +69,9 @@ nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>gu :!gulp<cr>
 nmap <Leader>gs :!gulp style<cr>
 nmap <Leader>gw :!gulp webpack:local<cr>
+
+" NPM
+nmap <Leader>nb :!npm run build<cr>
 
 " Map recent used
 nmap <C-E> :CtrlPMRUFiles<cr>

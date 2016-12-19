@@ -23,6 +23,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
 Plugin 'lumiliet/vim-twig'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'jiangmiao/auto-pairs'
 
 " Vundle end
 call vundle#end()
