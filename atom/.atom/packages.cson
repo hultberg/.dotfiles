@@ -10,6 +10,7 @@ packages: [
   "coffee-compile"
   "docblockr"
   "editorconfig"
+  "enhanced-tabs"
   "file-icons"
   "grammar-mode"
   "highlight-selected"
@@ -42,4 +43,3 @@ packages: [
   "vim-mode-plus-move-selected-text"
   "wakatime"
 ]
-
