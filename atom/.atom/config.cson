@@ -1,0 +1,97 @@
+"*":
+  "atom-clock":
+    dateFormat: "HH:mm"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      predefinedColor: "Blue"
+    fonts:
+      fontSize: 14
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  blame:
+    defaultWidth: 500
+  core:
+    automaticallyUpdate: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "metrics"
+      "whitespace"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax-dark"
+    ]
+    useCustomTitleBar: true
+  docblockr:
+    per_section_indent: true
+    spacer_between_sections: true
+  editor:
+    fontFamily: "Fira Code"
+    lineHeight: 2.2
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
+  "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "._*"
+      "node_modules"
+    ]
+  linter:
+    errorPanelHeight: 74
+  "linter-php":
+    executablePath: "/usr/local/bin/php"
+  "linter-phpcs":
+    autoExecutableSearch: false
+    disableWhenNoConfigFile: true
+    executablePath: "~/.composer/vendor/bin/phpcs"
+  "linter-phpmd":
+    executablePath: "~/.composer/vendor/bin/phpmd"
+    rulesets: "cleancode,codesize,unusedcode"
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap:
+    absoluteMode: true
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  "package-generator":
+    packageSyntax: "coffeescript"
+  "php-integrator-autocomplete-plus":
+    automaticallyAddUseStatements: false
+  "php-integrator-base":
+    additionalIndexingDelay: 2
+    memoryLimit: 512
+    phpCommand: "/usr/local/bin/php"
+  "php-integrator-linter":
+    showMissingDocs: false
+  tabs:
+    alwaysShowTabBar: false
+    enableVcsColoring: true
+  "time-for-break":
+    timeBetween: 1
+  "tree-view": {}
+  "vim-mode":
+    useSmartcaseForSearch: true
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+  "wakatime-hidden":
+    lastInit: 1487621052
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
