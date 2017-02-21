@@ -39,7 +39,5 @@ packages: [
   "php-integrator-refactoring"
   "php-twig"
   "project-manager"
-  "vim-mode-plus"
-  "vim-mode-plus-move-selected-text"
   "wakatime"
 ]
