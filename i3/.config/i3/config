@@ -9,7 +9,14 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec --no-startup-id nitrogen --restore
+# Make caps, super
+exec --no-startup-id setxkbmap -option caps:super
+
+# Wallpaper
+exec --no-startup-id feh --randomize --bg-fill /home/edvin/Pictures/backgrounds/
+
+# Set correct display configuration
+exec --no-startup-id xrandr --output HDMI-0 --auto --left-of DVI-I-1
 
 set $mod Mod4
 

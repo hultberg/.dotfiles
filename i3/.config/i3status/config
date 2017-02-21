@@ -32,9 +32,9 @@ ethernet _first_ {
         format_down = " down"
 }
 
-battery 0 {
-        format = "%status %percentage %remaining"
-}
+#battery 0 {
+#        format = "%status %percentage %remaining"
+#}
 
 run_watch DHCP {
         pidfile = "/var/run/dhclient*.pid"
