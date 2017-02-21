@@ -85,9 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval $(keychain --eval --quiet id_rsa)
 
-# Make caps act like super..
-setxkbmap -option caps:super
-
 # Some nice aliases
 
 alias ll='ls -lah'
