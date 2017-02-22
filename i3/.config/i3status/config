@@ -7,12 +7,13 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 1
+	output_format = "i3bar"
+    colors = true
+    interval = 1
 
-        color_good = "#859900"
-        color_bad = "#DC322F"
-        color_degraded = "#1c5766"
+    color_good = "#859900"
+    color_bad = "#DC322F"
+    color_degraded = "#1c5766"
 }
 
 order += "disk /"
@@ -32,9 +33,9 @@ ethernet _first_ {
         format_down = " down"
 }
 
-#battery 0 {
-#        format = "%status %percentage %remaining"
-#}
+battery 0 {
+        format = "%status %percentage %remaining"
+}
 
 run_watch DHCP {
         pidfile = "/var/run/dhclient*.pid"
