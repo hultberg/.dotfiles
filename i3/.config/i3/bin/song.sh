@@ -2,6 +2,9 @@
 # Script to echo song information using playerctl
 # If spotify is not playing, nothing is echoed.
 #
+# Requirements:
+#   - playerctl (https://github.com/acrisci/playerctl)
+#
 # @author Edvin Hultberg <post@hultberg.no>
 
 spotify_status=$(playerctl status)
