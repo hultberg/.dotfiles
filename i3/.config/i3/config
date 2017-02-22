@@ -51,6 +51,9 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# Bind MOD+x to jump to an urgent window.
+bindsym $mod+x [urgent=latest] focus
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -177,4 +180,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status | ~/.config/i3/bin/wrapper.py
+		position top
+		mode dock
+		hidden_state show
+
+
+		colors {
+			background #444444
+			statusline #adadad
+			separator  #919191
+		}
 }
