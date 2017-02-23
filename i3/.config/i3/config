@@ -143,6 +143,9 @@ assign [class="atom"] $space3
 assign [class="spotify"] $space4
 assign [class="thunderbird"] $space6
 
+# Hide edge borders
+hide_edge_borders smart
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
