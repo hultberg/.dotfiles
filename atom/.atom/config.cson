@@ -22,7 +22,6 @@
     disabledPackages: [
       "metrics"
       "whitespace"
-      "tabs"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"

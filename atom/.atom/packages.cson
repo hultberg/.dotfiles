@@ -10,7 +10,6 @@ packages: [
   "coffee-compile"
   "docblockr"
   "editorconfig"
-  "enhanced-tabs"
   "file-icons"
   "grammar-mode"
   "highlight-selected"
