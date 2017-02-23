@@ -33,7 +33,7 @@ import subprocess
 def get_song_info():
     """ Execute a custom script to fetch song information."""
     proc = subprocess.Popen('~/.config/i3/bin/song.sh', shell=True, stdout=subprocess.PIPE)
-    return proc.communicate()[0].decode('ascii')
+    return proc.communicate()[0].decode('utf-8')
 
 def print_line(message):
     """ Non-buffered printing to stdout. """
