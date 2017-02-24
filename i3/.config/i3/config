@@ -9,6 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# Load custom keymapping for my apple keyboard :D
+exec --no-startup-id xmodmap ~/.Xmodmap
+
 # Make caps, super
 exec --no-startup-id setxkbmap -option caps:super
 
