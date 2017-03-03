@@ -22,6 +22,7 @@
     disabledPackages: [
       "metrics"
       "whitespace"
+      "vim-mode-plus"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
@@ -35,7 +36,7 @@
     spacer_between_sections: true
   editor:
     fontFamily: "Fira Code"
-    lineHeight: 2.2
+    lineHeight: 2
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4
@@ -67,6 +68,8 @@
       "highlight-selectedDecorationsZIndex": 0
       selection: true
       selectionDecorationsZIndex: 0
+  "one-dark-ui":
+    fontSize: 12
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
