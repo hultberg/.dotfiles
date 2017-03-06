@@ -63,7 +63,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -116,8 +120,6 @@ alias gfhp='git flow hotfix publish'
 alias gfrs='git flow release start'
 alias gfrf='git flow release finish'
 alias gfrp='git flow release publish'
-
-alias ccrebuild='homestead ssh -- "(cd projects/completecontrol/ && ./bin/rebuild)"'
 
 function homestead() {
 	(cd ~/Homestead && vagrant $* )
