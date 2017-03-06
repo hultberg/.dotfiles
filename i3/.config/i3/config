@@ -9,17 +9,17 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Make caps, super
-exec --no-startup-id setxkbmap -option caps:super
-
 # Load custom keymapping for my apple keyboard :D
 exec --no-startup-id xmodmap ~/.Xmodmap
 
-# Set correct display configuration
-exec --no-startup-id bash -c ~/.screenlayout/layout.sh
+# Make caps, super
+exec --no-startup-id setxkbmap -option caps:super
 
 # Wallpaper
-exec --no-startup-id feh --randomize --bg-scale /home/edvin/Pictures/backgrounds/
+exec --no-startup-id feh --randomize --bg-fill /home/edvin/Pictures/backgrounds/
+
+# Set correct display configuration
+exec --no-startup-id xrandr --output HDMI-0 --auto --left-of DVI-I-1
 
 set $mod Mod4
 
@@ -113,12 +113,12 @@ bindsym $mod+a focus parent
 # i3-lock
 bindsym $mod+Ctrl+l exec i3lock-fancy -g
 
-set $space1 "1: Terms"
-set $space2 "2: Dev"
-set $space3 "3: Web"
+set $space1 "1: Random"
+set $space2 "2: Web"
+set $space3 "3: Dev"
 set $space4 "4: Music"
-set $space5 "5: Chat"
-set $space6 "6"
+set $space5 "5: Terminal"
+set $space6 "6: Mail"
 
 # switch to workspace
 bindsym $mod+1 workspace $space1
@@ -144,9 +144,10 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-assign [class="atom"] $space2
-assign [class="chromium"] $space3
+assign [class="chromium"] $space2
+assign [class="atom"] $space3
 assign [class="spotify"] $space4
+assign [class="thunderbird"] $space6
 
 # Hide edge borders
 hide_edge_borders smart
@@ -184,17 +185,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
-bindsym XF86AudioMute exec amixer set Master toggle
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
 		status_command i3status | ~/.config/i3/bin/wrapper.py
-		position bottom
+		position top
 		mode dock
 		hidden_state show
 		font xft:Fira Code, FontAwesome 8
