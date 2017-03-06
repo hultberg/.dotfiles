@@ -1,0 +1,1 @@
+*/15 * * * * DISPLAY=:0 bash -c ~/.config/i3/bin/background.sh

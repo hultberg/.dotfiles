@@ -9,17 +9,17 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Make caps, super
-exec --no-startup-id setxkbmap -option caps:super
-
 # Load custom keymapping for my apple keyboard :D
 exec --no-startup-id xmodmap ~/.Xmodmap
+
+# Make caps, super
+exec --no-startup-id setxkbmap -option caps:super
 
 # Set correct display configuration
 exec --no-startup-id bash -c ~/.screenlayout/layout.sh
 
 # Wallpaper
-exec --no-startup-id feh --randomize --bg-scale /home/edvin/Pictures/backgrounds/
+exec --no-startup-id bash -c ~/.config/i3/bin/background.sh
 
 set $mod Mod4
 
