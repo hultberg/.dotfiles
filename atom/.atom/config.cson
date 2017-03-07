@@ -17,6 +17,7 @@
   blame:
     defaultWidth: 500
   core:
+    autoHideMenuBar: true
     automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
@@ -84,7 +85,6 @@
   "php-integrator-linter":
     showMissingDocs: false
   tabs:
-    alwaysShowTabBar: false
     enableVcsColoring: true
   "time-for-break":
     timeBetween: 1
