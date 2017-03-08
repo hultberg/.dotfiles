@@ -7,6 +7,7 @@ packages: [
   "docblockr"
   "editorconfig"
   "file-icons"
+  "file-watcher"
   "highlight-selected"
   "hyperclick"
   "intentions"

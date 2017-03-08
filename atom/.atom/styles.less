@@ -1,5 +1,20 @@
 atom-text-editor {
   text-rendering: optimizeLegibility;
+  
+  .gutter {
+      .line-number {    
+          transition: all .3s ease;
+          
+          &.cursor-line,
+          &.cursor-line-no-selection {
+              background-color: rgba(7, 78, 185, .4);
+          }
+      }
+  }  
+}
+
+atom-text-editor * {
+    transition: all .1s ease;
 }
 
 atom-text-editor .syntax--string.syntax--quoted,
