@@ -37,6 +37,7 @@
     spacer_between_sections: true
   editor:
     fontFamily: "Fira Code"
+    fontSize: 15
     lineHeight: 2
     scrollPastEnd: true
     showIndentGuide: true
@@ -49,6 +50,8 @@
     ]
   linter:
     errorPanelHeight: 74
+    lintOnChange: false
+    lintPreviewTabs: false
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-phpcs":
@@ -58,6 +61,8 @@
   "linter-phpmd":
     executablePath: "~/.composer/vendor/bin/phpmd"
     rulesets: "cleancode,codesize,unusedcode"
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
