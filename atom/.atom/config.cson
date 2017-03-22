@@ -37,6 +37,7 @@
     spacer_between_sections: true
   editor:
     fontFamily: "Fira Code"
+    fontSize: 15
     lineHeight: 2
     scrollPastEnd: true
     showIndentGuide: true
