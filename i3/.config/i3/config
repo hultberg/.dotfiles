@@ -208,8 +208,11 @@ bar {
 
 
 		colors {
-			background #444444
-			statusline #adadad
+			background #232323
+			statusline #999999
 			separator  #919191
+			active_workspace #232323 #232323 #cccccc
+			inactive_workspace #232323 #232323 #666555
+			focused_workspace #232323 #485770 #fafafa
 		}
 }
