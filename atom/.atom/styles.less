@@ -17,6 +17,12 @@ atom-text-editor {
   }  
 }
 
+atom-text-editor.is-focused::shadow {
+  ruler-view.rulerz {
+    border-left: 9px solid rgba(50, 50, 50, .45);
+  }
+}
+
 atom-text-editor .syntax--string.syntax--quoted,
 atom-text-editor .syntax--string.syntax--regexp {
   -webkit-font-feature-settings: "liga" off, "calt" off;
