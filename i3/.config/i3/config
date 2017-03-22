@@ -9,17 +9,23 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Load custom keymapping for my apple keyboard :D
-exec --no-startup-id xmodmap ~/.Xmodmap
+# Make caps super
+exec setxkbmap -option caps:super
 
-# Make caps, super
-exec --no-startup-id setxkbmap -option caps:super
+# Set keyboard layout
+exec setxkbmap no
+
+# Load custom keymapping for my apple keyboard :D
+exec xmodmap ~/.Xmodmap
 
 # Set correct display configuration
 exec --no-startup-id bash -c ~/.screenlayout/layout.sh
 
 # Wallpaper
 exec --no-startup-id bash -c ~/.config/i3/bin/background.sh
+
+# Notifications
+exec --no-startup-id dunst
 
 set $mod Mod4
 
@@ -149,7 +155,7 @@ assign [class="chromium"] $space3
 assign [class="spotify"] $space4
 
 # Hide edge borders
-hide_edge_borders smart
+#hide_edge_borders smart
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -184,8 +190,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrevious exec playerctl previous
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
