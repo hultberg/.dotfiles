@@ -1,9 +1,11 @@
 packages: [
   "advanced-open-file"
+  "atom-clock"
   "atom-material-syntax"
   "atom-material-syntax-dark"
   "atom-material-ui"
   "blame"
+  "busy-signal"
   "docblockr"
   "editorconfig"
   "file-icons"
@@ -19,6 +21,7 @@ packages: [
   "less-than-slash"
   "linter"
   "linter-php"
+  "linter-ui-default"
   "minimap"
   "minimap-find-and-replace"
   "minimap-highlight-selected"
@@ -26,6 +29,7 @@ packages: [
   "nord-atom-ui"
   "northem-dark-atom-ui"
   "package-sync"
+  "php-cs-fixer"
   "php-integrator-annotations"
   "php-integrator-autocomplete-plus"
   "php-integrator-base"
@@ -36,4 +40,5 @@ packages: [
   "php-twig"
   "project-manager"
   "vim-mode-plus"
+  "wakatime"
 ]

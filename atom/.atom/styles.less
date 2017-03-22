@@ -1,6 +1,10 @@
 atom-text-editor {
   text-rendering: optimizeLegibility;
   
+  * {
+      transition: all ease .06s; 
+  }
+  
   .gutter {
       .line-number {    
           transition: all .3s ease;
@@ -11,10 +15,6 @@ atom-text-editor {
           }
       }
   }  
-}
-
-atom-text-editor * {
-    transition: all .1s ease;
 }
 
 atom-text-editor .syntax--string.syntax--quoted,

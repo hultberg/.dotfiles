@@ -19,7 +19,7 @@
   core:
     autoHideMenuBar: true
     automaticallyUpdate: false
-    destroyEmptyPanes: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "metrics"
       "whitespace"
@@ -31,7 +31,7 @@
       "one-dark-ui"
       "atom-material-syntax-dark"
     ]
-    useCustomTitleBar: true
+    useCustomTitleBar: false
   docblockr:
     per_section_indent: true
     spacer_between_sections: true
@@ -49,6 +49,8 @@
     ]
   linter:
     errorPanelHeight: 74
+    lintOnChange: false
+    lintPreviewTabs: false
   "linter-php":
     executablePath: "/usr/local/bin/php"
   "linter-phpcs":
@@ -58,6 +60,9 @@
   "linter-phpmd":
     executablePath: "~/.composer/vendor/bin/phpmd"
     rulesets: "cleancode,codesize,unusedcode"
+  "linter-ui-default":
+    panelHeight: 53
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
@@ -76,6 +81,14 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "php-cs-fixer":
+    executablePath: "/home/edvin/.config/composer/vendor/bin/php-cs-fixer"
+    executeOnSave: true
+    fixerArguments: [
+      "--using-cache=no"
+      "--no-interaction"
+      "--config .php_cs"
+    ]
   "php-integrator-autocomplete-plus":
     automaticallyAddUseStatements: false
   "php-integrator-base":
