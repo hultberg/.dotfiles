@@ -9,15 +9,6 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Make caps super
-exec setxkbmap -option caps:super
-
-# Set keyboard layout
-exec setxkbmap no
-
-# Load custom keymapping for my apple keyboard :D
-exec xmodmap ~/.Xmodmap
-
 # Set correct display configuration
 exec --no-startup-id bash -c ~/.screenlayout/layout.sh
 
@@ -26,6 +17,8 @@ exec --no-startup-id bash -c ~/.config/i3/bin/background.sh
 
 # Notifications
 exec --no-startup-id dunst
+
+exec --no-startup-id bash -c ~/.setup.sh
 
 set $mod Mod4
 
