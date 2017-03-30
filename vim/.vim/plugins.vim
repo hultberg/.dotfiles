@@ -18,10 +18,9 @@ Plugin 'ervandew/supertab'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
-Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
 Plugin 'lumiliet/vim-twig'
-Plugin 'jiangmiao/auto-pairs'
+"Plugin 'jiangmiao/auto-pairs'
 
 " Vundle end
 call vundle#end()
