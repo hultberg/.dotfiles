@@ -23,7 +23,7 @@
     disabledPackages: [
       "metrics"
       "whitespace"
-      "vim-mode-plus"
+      "linter-phpmd"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
@@ -38,10 +38,12 @@
   editor:
     fontFamily: "Fira Code"
     fontSize: 15
-    lineHeight: 2
+    lineHeight: 2.05
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4
+  "file-watcher":
+    autoReload: true
   "fuzzy-finder":
     ignoredNames: [
       ".git"
@@ -49,7 +51,6 @@
       "node_modules"
     ]
   linter:
-    errorPanelHeight: 74
     lintOnChange: false
     lintPreviewTabs: false
   "linter-php":
@@ -59,7 +60,7 @@
     disableWhenNoConfigFile: true
     executablePath: "~/.composer/vendor/bin/phpcs"
   "linter-phpmd":
-    executablePath: "~/.composer/vendor/bin/phpmd"
+    executablePath: "/home/edvin/.config/composer/vendor/bin/phpmd"
     rulesets: "cleancode,codesize,unusedcode"
   "linter-ui-default":
     panelHeight: 53
@@ -85,11 +86,7 @@
   "php-cs-fixer":
     executablePath: "/home/edvin/.config/composer/vendor/bin/php-cs-fixer"
     executeOnSave: true
-    fixerArguments: [
-      "--using-cache=no"
-      "--no-interaction"
-      "--config .php_cs"
-    ]
+    pathMode: "intersection"
   "php-integrator-autocomplete-plus":
     automaticallyAddUseStatements: false
   "php-integrator-base":
@@ -102,13 +99,17 @@
     enableVcsColoring: true
   "time-for-break":
     timeBetween: 1
-  "tree-view": {}
+  "tree-view":
+    autoReveal: true
+    focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true
+  "vim-mode-plus":
+    useClipboardAsDefaultRegister: true
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":
-    lastInit: 1487621052
+    lastInit: 1490879322
   welcome:
     showOnStartup: false
 ".blade.html.php.text":

@@ -1,3 +1,23 @@
+// infinite atom tabs, wrapped
+.tab-bar {
+    -webkit-flex-wrap: wrap;
+    height: auto;
+    .tab, .tab.active {
+        -webkit-flex: initial;
+        .title {
+            // a little room for the Close icon
+            padding-right: 9px;
+
+            // removing the mask is optional but not really needed in this mode. 
+            -webkit-mask: none;
+
+            // for fixed width tabs, uncomment:
+            // max-width: 11ch;
+
+        }
+    }
+}
+
 atom-text-editor {
   text-rendering: optimizeLegibility;
   

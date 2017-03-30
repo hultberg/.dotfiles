@@ -41,7 +41,5 @@ packages: [
   "php-integrator-refactoring"
   "php-twig"
   "project-manager"
-  "rulerz"
-  "vim-mode-plus"
   "wakatime"
 ]
