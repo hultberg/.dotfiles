@@ -6,6 +6,7 @@ packages: [
   "atom-material-ui"
   "blame"
   "busy-signal"
+  "dalek"
   "docblockr"
   "editorconfig"
   "file-icons"
@@ -21,6 +22,7 @@ packages: [
   "language-vue"
   "less-than-slash"
   "linter"
+  "linter-eslint"
   "linter-php"
   "linter-phpmd"
   "linter-ui-default"
@@ -41,5 +43,6 @@ packages: [
   "php-integrator-refactoring"
   "php-twig"
   "project-manager"
+  "vim-mode-plus"
   "wakatime"
 ]
