@@ -56,6 +56,7 @@ plugins=(git)
 if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
 fi
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
