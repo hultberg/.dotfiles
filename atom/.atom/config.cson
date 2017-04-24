@@ -111,7 +111,6 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
-    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true
@@ -120,7 +119,7 @@
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":
-    lastInit: 1490879322
+    lastInit: 1492498417
   welcome:
     showOnStartup: false
 ".blade.html.php.text":

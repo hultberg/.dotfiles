@@ -1,7 +1,7 @@
 " Import plugins
 source ~/.vim/plugins.vim
 
-set shell=/bin/bash
+set shell=zsh\ -l
 
 syntax on
 
@@ -151,6 +151,10 @@ augroup END
 augroup phptabs
 	autocmd!
 	autocmd Filetype php setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+augroup END
+
+augroup vimfiles
+	autocmd FileType vue syntax sync fromstart
 augroup END
 
 

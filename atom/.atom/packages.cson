@@ -6,7 +6,6 @@ packages: [
   "atom-material-ui"
   "blame"
   "busy-signal"
-  "dalek"
   "docblockr"
   "editorconfig"
   "file-icons"
@@ -44,5 +43,6 @@ packages: [
   "php-twig"
   "project-manager"
   "vim-mode-plus"
+  "vim-mode-plus-keymaps-for-surround"
   "wakatime"
 ]
