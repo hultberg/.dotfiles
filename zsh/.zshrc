@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/edvin/.oh-my-zsh
+export ZSH=/home/edvin/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="muse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,6 +53,9 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+if [ -d "$HOME/bin" ] ; then
+  PATH="$PATH:$HOME/bin"
+fi
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -79,48 +82,13 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval $(keychain --eval --quiet id_rsa)
 
-# Some nice aliases
+# Loop custom commands files and load them.
+for f in ~/.zsh/commands/**/*; do
+	source "$f"
+done
 
-alias ll='ls -lah'
-
-alias gs='git status'
-alias ga='git add'
-alias gaa='git add --all'
-alias gcb='git checkout'
-alias gb='git branch'
-alias gc='git commit -m'
-alias gcv='git commit -v'
-alias gl='git lg'
-alias gps='git push'
-alias gpl='git pull'
-alias gre='git reset'
-alias gst='git stash'
-alias gm='git merge --no-ff'
-alias gf='git fetch'
-alias gcp='git cherry-pick -x'
-alias grcf='git reset HEAD --hard && git clean -f -d'
-
-# Git Flow Feature
-alias gffs='git flow feature start'
-alias gfff='git flow feature finish'
-alias gffp='git flow feature publish'
-
-# Git Flow Hotfix
-alias gfhs='git flow hotfix start'
-alias gfhf='git flow hotfix finish'
-alias gfhp='git flow hotfix publish'
-
-# Git Flow Release
-alias gfrs='git flow release start'
-alias gfrf='git flow release finish'
-alias gfrp='git flow release publish'
-
-alias ccrebuild='homestead ssh -- "(cd projects/completecontrol/ && ./bin/rebuild)"'
-
-function homestead() {
-	(cd ~/Homestead && vagrant $* )
-}
-
+if [[ -e "~/.zshrc.local" ]]; then
+	source "~/.zshrc.local"
+fi
 
