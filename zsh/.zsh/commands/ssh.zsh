@@ -12,7 +12,7 @@ fi
 
 start-keychain() {
 	if hash gpg-agent; then
-		eval $(keychain --eval --agents gpg,ssh "$@" $KEYCHAIN_SSH_KEYS)
+		eval $(keychain --eval --agents gpg,ssh "$@" $KEYCHAIN_SSH_KEYS $KEYCHAIN_GPG_KEYS)
 	else
 		eval $(keychain --eval --agents ssh "$@" $KEYCHAIN_SSH_KEYS $KEYCHAIN_GPG_KEYS)
 	fi
