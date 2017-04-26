@@ -89,7 +89,7 @@ for f in ~/.zsh/commands/**/*; do
 	source "$f"
 done
 
-if [[ -e "~/.zshrc.local" ]]; then
-	source "~/.zshrc.local"
+if [[ -e "/home/"$(whoami)"/.zshrc.local" ]]; then
+	source "/home/"$(whoami)"/.zshrc.local"
 fi
 
