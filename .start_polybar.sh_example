@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-MONITOR_MAIN=HDMI-0 polybar main
-MONITOR_MAIN=DVI-0 polybar right
+POLYBAR_MONITOR=HDMI-0 polybar main
+POLYBAR_MONITOR=DVI-0 polybar right
 
