@@ -43,26 +43,16 @@ module-margin-right = 1
 font-0 = Fira Code:pixelsize=9;3
 font-1 = FontAwesome:pixelsize=10;3
 
-tray-position = right
-tray-padding = 0
+tray-detached = false
+tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 [bar/main]
 monitor = ${env:POLYBAR_MONITOR:HDMI-0}
 inherit = bar/base
 
+tray-position = right
 modules-left = i3 xwindow
 modules-center =  
 modules-right = music filesystem volume memory cpu temperature eth redshift pacman date powermenu 
