@@ -60,7 +60,7 @@ tray-padding = 0
 ;scroll-down = i3wm-wsprev
 
 [bar/main]
-monitor = ${env:MONITOR_MAIN:HDMI-0}
+monitor = ${env:POLYBAR_MONITOR:HDMI-0}
 inherit = bar/base
 
 modules-left = i3 xwindow
@@ -68,7 +68,15 @@ modules-center =
 modules-right = music filesystem volume memory cpu temperature eth redshift pacman date powermenu 
 
 [bar/right]
-monitor = ${env:MONITOR_RIGHT:DVI-D-0}
+monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
+inherit = bar/base
+
+modules-left = i3 xwindow
+modules-center = 
+modules-right = music date powermenu 
+
+[bar/left]
+monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
 inherit = bar/base
 
 modules-left = i3 xwindow
