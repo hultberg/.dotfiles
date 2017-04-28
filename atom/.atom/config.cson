@@ -24,6 +24,10 @@
       "metrics"
       "whitespace"
       "linter-phpmd"
+      "php-twig"
+      "language-nginx"
+      "language-ini"
+      "language-diff"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
@@ -111,6 +115,7 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
+    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true

@@ -18,11 +18,15 @@
     }
 }
 
+status-bar .package-updates-status-view {
+    display: none;
+}
+
 atom-text-editor {
   text-rendering: optimizeLegibility;
   
   * {
-      transition: all ease .05s; 
+    //   transition: all ease .05s; 
   }
   
   .gutter {
@@ -35,6 +39,11 @@ atom-text-editor {
           }
       }
   }  
+}
+
+.tree-view, ul.tab-bar {
+    font-family: 'Fira Code';
+    font-size: 0.95rem;
 }
 
 atom-text-editor.is-focused::shadow {
