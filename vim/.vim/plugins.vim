@@ -21,6 +21,7 @@ Plugin 'tobyS/pdv'
 Plugin 'posva/vim-vue'
 Plugin 'lumiliet/vim-twig'
 "Plugin 'jiangmiao/auto-pairs'
+Plugin 'dikiaap/minimalist'
 
 " Vundle end
 call vundle#end()

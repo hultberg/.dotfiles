@@ -20,7 +20,8 @@ set showmatch
 
 " -------------- Visuals --------------
 
-colorscheme atom-dark-256
+" colorscheme atom-dark-256
+colorscheme minimalist
 set t_CO=256
 set linespace=5
 set guifont=Fira\ Code\ 12
