@@ -22,7 +22,8 @@ set showmatch
 
 colorscheme atom-dark-256
 set t_CO=256
-set linespace=20
+set linespace=5
+set guifont=Fira\ Code\ 12
 
 " Highlight line nr column
 highlight LineNr ctermbg=bg
@@ -155,6 +156,7 @@ augroup END
 
 augroup vimfiles
 	autocmd FileType vue syntax sync fromstart
+	autocmd BufNewFile,BufRead *.vue set ft=vue
 augroup END
 
 
