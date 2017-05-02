@@ -25,7 +25,7 @@ exec --no-startup-id dunst -config ~/.dunstrc
 exec --no-startup-id bash -c ~/.setup.sh
 
 # Start polybars
-exec --no-startup-id bash -c ~/.start_polybar.sh
+exec_always --no-startup-id bash -c ~/.start_polybar.sh
 
 set $mod Mod4
 

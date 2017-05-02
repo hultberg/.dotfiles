@@ -26,7 +26,6 @@
       "linter-phpmd"
       "php-twig"
       "language-nginx"
-      "language-ini"
       "language-diff"
     ]
     excludeVcsIgnoredPaths: false
