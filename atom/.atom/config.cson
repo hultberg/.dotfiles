@@ -14,6 +14,9 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "autocomplete-plus":
+    autoActivationDelay: 400
+    maxVisibleSuggestions: 15
   blame:
     defaultWidth: 500
   core:
@@ -81,6 +84,7 @@
     ]
   linter:
     lintOnChange: false
+    lintOnChangeInterval: 400
     lintPreviewTabs: false
   "linter-eslint":
     lintHtmlFiles: true
