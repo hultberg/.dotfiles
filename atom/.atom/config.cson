@@ -15,7 +15,8 @@
       panelContrast: true
       panelShadows: true
   "autocomplete-plus":
-    autoActivationDelay: 400
+    autoActivationDelay: 250
+    enableAutoActivation: false
     maxVisibleSuggestions: 15
   blame:
     defaultWidth: 500
@@ -81,6 +82,7 @@
       ".git"
       "._*"
       "node_modules"
+      "storage/proxies"
     ]
   linter:
     lintOnChange: false
@@ -100,15 +102,24 @@
   "linter-ui-default":
     panelHeight: 53
     showPanel: true
-  "markdown-preview":
-    useGitHubStyle: true
+  "markdown-preview": {}
   minimap:
     absoluteMode: true
     plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      "minimap-hide": true
+      "minimap-hideDecorationsZIndex": 0
       selection: true
       selectionDecorationsZIndex: 0
   "one-dark-ui":
@@ -122,8 +133,7 @@
     executablePath: "/home/edvin/.config/composer/vendor/bin/php-cs-fixer"
     executeOnSave: true
     pathMode: "intersection"
-  "php-integrator-autocomplete-plus":
-    automaticallyAddUseStatements: false
+  "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
     additionalIndexingDelay: 2
     memoryLimit: 512
