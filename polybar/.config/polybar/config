@@ -55,7 +55,7 @@ inherit = bar/base
 tray-position = right
 modules-left = i3 xwindow
 modules-center =  
-modules-right = music filesystem volume memory cpu temperature eth redshift pacman date powermenu 
+modules-right = music filesystem volume memory cpu temperature eth redshift pacman xkeyboard date powermenu 
 
 [bar/right]
 monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
@@ -63,7 +63,7 @@ inherit = bar/base
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = music date powermenu 
+modules-right = music xkeyboard date powermenu 
 
 [bar/left]
 monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
@@ -71,7 +71,7 @@ inherit = bar/base
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = music date powermenu 
+modules-right = music xkeyboard date powermenu 
 
 [module/xwindow]
 type = internal/xwindow
@@ -138,6 +138,34 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+; Available tags:
+;   <label-layout> (default)
+;   <label-indicator> (default)
+format = <label-layout>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-spacing = 0
+
+; Available tokens:
+;   %layout%
+;   %name%
+;   %number%
+; Default: %layout%
+label-layout = %name%
+label-layout-padding = 0
+label-layout-background = ${colors.background}
+label-layout-foreground = ${colors.foreground}
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-indicator = %name%
+label-indicator-padding = 1
+label-indicator-background = ${colors.background}
 
 [module/xbacklight]
 type = internal/xbacklight
