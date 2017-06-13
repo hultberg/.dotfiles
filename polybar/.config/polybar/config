@@ -55,7 +55,7 @@ inherit = bar/base
 tray-position = right
 modules-left = i3 xwindow
 modules-center =  
-modules-right = music filesystem volume memory cpu temperature eth redshift pacman xkeyboard date powermenu 
+modules-right = music filesystem volume memory cpu temperature eth redshift pacman date
 
 [bar/right]
 monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
@@ -63,7 +63,7 @@ inherit = bar/base
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = music xkeyboard date powermenu 
+modules-right = music date 
 
 [bar/left]
 monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
@@ -71,7 +71,7 @@ inherit = bar/base
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = music xkeyboard date powermenu 
+modules-right = music date 
 
 [module/xwindow]
 type = internal/xwindow
@@ -260,7 +260,7 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %d.%m.%Y"
 
 time = %H:%M
 time-alt = %H:%M:%S
