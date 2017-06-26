@@ -7,4 +7,6 @@
 .atom/projects.cson
 .atom/split-diff
 .atom/storage
+.atom/snapshot-cache
+.atom/github.cson
 !.gitignore
