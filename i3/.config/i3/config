@@ -159,7 +159,7 @@ assign [class="chromium"] $space3
 assign [class="spotify"] $space4
 
 # Hide edge borders
-#hide_edge_borders smart
+hide_edge_borders smart
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
