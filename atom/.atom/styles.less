@@ -2,6 +2,8 @@
 .tab-bar {
     -webkit-flex-wrap: wrap;
     height: auto;
+    // display: none;
+    
     .tab, .tab.active {
         -webkit-flex: initial;
         .title {
@@ -16,6 +18,16 @@
 
         }
     }
+}
+
+.tab-bar .tab.active[data-type$="Editor"],
+.tab-bar .tab.active[data-type$="AboutView"],
+.tab-bar .tab.active[data-type$="TimecopView"],
+.tab-bar .tab.active[data-type$="StyleguideView"],
+.tab-bar .tab.active[data-type="MarkdownPreviewView"],
+.list-group .selected::before,
+.list-tree .selected::before {
+    background-color: #444555;
 }
 
 status-bar .package-updates-status-view {

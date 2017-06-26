@@ -29,7 +29,6 @@
       "whitespace"
       "php-twig"
       "language-blueberry"
-      "linter-php"
       "image-view"
       "language-c"
       "language-clojure"
@@ -48,8 +47,26 @@
       "styleguide"
       "update-package-dependencies"
       "welcome"
+      "linter-phpmd"
+      "github"
+      "minimap-linter"
     ]
     excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+      "storage/**/*"
+      ".idea"
+    ]
+    packagesWithKeymapsDisabled: [
+      "center-cursor"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -61,6 +78,7 @@
     spacer_between_sections: true
   editor:
     fontFamily: "Fira Code"
+    fontSize: 15
     lineHeight: 2.05
     scrollPastEnd: true
     showIndentGuide: true
@@ -82,8 +100,10 @@
       ".git"
       "._*"
       "node_modules"
-      "storage/proxies"
+      "storage/**/*"
+      ".idea"
     ]
+    preserveLastSearch: true
   linter:
     lintOnChange: false
     lintOnChangeInterval: 400
@@ -100,7 +120,8 @@
     executablePath: "/home/edvin/.config/composer/vendor/bin/phpmd"
     rulesets: "cleancode,codesize,unusedcode"
   "linter-ui-default":
-    panelHeight: 53
+    hidePanelWhenEmpty: true
+    panelHeight: 69
     showPanel: true
   "markdown-preview": {}
   minimap:
@@ -124,6 +145,7 @@
       selectionDecorationsZIndex: 0
   "one-dark-ui":
     fontSize: 12
+    tabSizing: "Minimum"
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
@@ -150,6 +172,9 @@
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":
+    stayOnDelete: true
+    stayOnTransformString: true
+    stayOnYank: true
     useClipboardAsDefaultRegister: true
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
