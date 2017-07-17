@@ -38,12 +38,12 @@ packages: [
   "php-integrator-annotations"
   "php-integrator-autocomplete-plus"
   "php-integrator-base"
-  "php-integrator-call-tips"
   "php-integrator-navigation"
   "php-integrator-refactoring"
   "php-twig"
   "project-manager"
   "scroll-percentage"
   "vim-mode-plus"
+  "vim-mode-plus-keymaps-for-surround"
   "wakatime"
 ]

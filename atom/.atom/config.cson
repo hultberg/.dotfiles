@@ -50,6 +50,7 @@
       "linter-phpmd"
       "github"
       "minimap-linter"
+      "scroll-percentage"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -75,7 +76,6 @@
     useCustomTitleBar: false
   docblockr:
     per_section_indent: true
-    spacer_between_sections: true
   editor:
     fontFamily: "Fira Code"
     fontSize: 15
@@ -160,6 +160,7 @@
     additionalIndexingDelay: 2
     memoryLimit: 512
     phpCommand: "/usr/local/bin/php"
+  "php-integrator-base:confirmed-upgrade-message": true
   "php-integrator-linter":
     showMissingDocs: false
   tabs:
