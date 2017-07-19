@@ -47,10 +47,11 @@
       "styleguide"
       "update-package-dependencies"
       "welcome"
-      "linter-phpmd"
       "github"
-      "minimap-linter"
-      "scroll-percentage"
+      "atom-clock"
+      "file-watcher"
+      "wakatime"
+      "file-icons"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -104,6 +105,8 @@
       ".idea"
     ]
     preserveLastSearch: true
+  hyperclick:
+    linuxTriggerKeys: "shiftKey,ctrlKey"
   linter:
     lintOnChange: false
     lintOnChangeInterval: 400
@@ -122,7 +125,6 @@
   "linter-ui-default":
     hidePanelWhenEmpty: true
     panelHeight: 69
-    showPanel: true
   "markdown-preview": {}
   minimap:
     absoluteMode: true
@@ -157,9 +159,10 @@
     pathMode: "intersection"
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
-    additionalIndexingDelay: 2
-    memoryLimit: 512
-    phpCommand: "/usr/local/bin/php"
+    core: {}
+    general: {}
+    linting:
+      showMissingDocs: false
   "php-integrator-base:confirmed-upgrade-message": true
   "php-integrator-linter":
     showMissingDocs: false
@@ -168,7 +171,6 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
-    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true
