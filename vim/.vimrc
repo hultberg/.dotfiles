@@ -44,6 +44,10 @@ set incsearch
 
 " -------------- Mappings --------------
 
+" Save when I forgot to open vim as sudo.
+" https://stackoverflow.com/a/7078429
+cmap w!! w !sudo tee > /dev/null %
+
 " Go to end of line
 nmap <Leader><Leader>e $
 nmap <Leader><Leader>s 0
