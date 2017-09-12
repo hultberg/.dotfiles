@@ -47,11 +47,8 @@
       "styleguide"
       "update-package-dependencies"
       "welcome"
-      "github"
       "atom-clock"
-      "file-watcher"
       "wakatime"
-      "file-icons"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -157,10 +154,14 @@
     executablePath: "/home/edvin/.config/composer/vendor/bin/php-cs-fixer"
     executeOnSave: true
     pathMode: "intersection"
+  "php-debug":
+    ServerAddress: "0.0.0.0"
+    currentPanelMode: "bottom"
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
     core: {}
-    general: {}
+    general:
+      indexContinuously: false
     linting:
       showMissingDocs: false
   "php-integrator-base:confirmed-upgrade-message": true
@@ -172,9 +173,11 @@
     timeBetween: 1
   "tree-view":
     focusOnReveal: false
+    hideVcsIgnoredFiles: true
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":
+    clearMultipleCursorsOnEscapeInsertMode: true
     stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true

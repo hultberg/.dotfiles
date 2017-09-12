@@ -1,2 +1,4 @@
 'atom-text-editor':
     'ctrl--': 'advanced-open-file:toggle'
+'atom-text-editor.vim-mode-plus.insert-mode':
+    'ctrl-j': 'vim-mode-plus:activate-normal-mode'
