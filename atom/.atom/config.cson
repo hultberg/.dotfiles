@@ -27,7 +27,6 @@
     disabledPackages: [
       "metrics"
       "whitespace"
-      "php-twig"
       "language-blueberry"
       "image-view"
       "language-c"
@@ -49,6 +48,10 @@
       "welcome"
       "atom-clock"
       "wakatime"
+      "php-debug"
+      "ide-php"
+      "ide-vue"
+      "atom-ide-ui"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -121,7 +124,7 @@
     rulesets: "cleancode,codesize,unusedcode"
   "linter-ui-default":
     hidePanelWhenEmpty: true
-    panelHeight: 69
+    panelHeight: 300
   "markdown-preview": {}
   minimap:
     absoluteMode: true
@@ -172,8 +175,8 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
+    autoReveal: true
     focusOnReveal: false
-    hideVcsIgnoredFiles: true
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":

@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/edvin/.dotfiles'
-let g:netrw_dirhist_2='/home/edvin/.dotfiles/vim'
-let g:netrw_dirhist_3='/home/edvin/.dotfiles/vim/.vim'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/edvin'
+let g:netrw_dirhist_2='/home/edvin/.dotfiles'
+let g:netrw_dirhist_3='/home/edvin/.dotfiles/polybar'
+let g:netrw_dirhist_4='/home/edvin/.dotfiles/polybar/.config'
+let g:netrw_dirhist_5='/home/edvin/.dotfiles/polybar/.config/polybar'
+let g:netrw_dirhist_6='/home/edvin/.mutt'
+let g:netrw_dirhist_7='/home/edvin/projects/private/lansys'
+let g:netrw_dirhist_8='/home/edvin/.zsh'

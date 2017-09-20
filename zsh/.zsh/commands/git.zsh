@@ -20,3 +20,8 @@ alias gf='git fetch'
 alias gcp='git cherry-pick -x'
 alias grcf='git reset HEAD --hard && git clean -f -d'
 alias gpsh='git push -u origin HEAD'
+
+function gclc {
+	git add changelogs/
+	git commit -m ":memo: update changelog" -m "[ci skip]"
+}

@@ -52,9 +52,14 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(you-should-use $plugins)
 
 if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
+fi
+
+if [[ -d "$HOME/.gem/ruby/2.4.0/bin" ]]; then
+	PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -68,6 +73,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+
+# Hardcore moode on "you-should-use"
+export YSU_HARDCORE=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
