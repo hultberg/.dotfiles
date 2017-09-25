@@ -51,8 +51,8 @@ bindsym --release $mod+Shift+l exec ~/.config/i3/bin/lock.py
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-new_window none
-new_float none
+new_window pixel 1
+new_float pixel 1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
