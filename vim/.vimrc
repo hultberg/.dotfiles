@@ -17,6 +17,16 @@ set t_vb=
 " Show matching bracet
 set showmatch
 
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+set guioptions-=l 
+set guioptions-=b 
+set guioptions-=h 
+set guioptions-=R 
+set guioptions-=e 
+set guiheadroom=0
 
 " -------------- Visuals --------------
 
@@ -24,7 +34,7 @@ set showmatch
 colorscheme minimalist
 set t_CO=256
 set linespace=5
-set guifont=Fira\ Code\ 12
+set guifont=Fira\ Code\ 11
 
 " Highlight line nr column
 highlight LineNr ctermbg=bg
@@ -51,6 +61,8 @@ cmap w!! w !sudo tee > /dev/null %
 " Go to end of line
 nmap <Leader><Leader>e $
 nmap <Leader><Leader>s 0
+
+nnoremap bu :buffers<CR>:buffer<Space>
 
 " Shortcut for escape
 ino jj <esc>
