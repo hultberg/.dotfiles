@@ -5,6 +5,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -12,7 +13,7 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#111111"
     cursor_color = "#aaaaaa"
     foreground_color = "#839496"
     scrollback_infinite = True
