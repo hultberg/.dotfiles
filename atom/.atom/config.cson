@@ -84,6 +84,11 @@
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4
+  "ex-mode":
+    splitbelow: true
+    splitright: true
+  "exception-reporting":
+    userId: "0727cd07-7b58-4fdd-9239-326f2005d915"
   "fast-eslint":
     grammarScopes: [
       "source.js"
@@ -180,11 +185,15 @@
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
+    sequentialPaste: true
     stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true
     useClipboardAsDefaultRegister: true
+    useSmartcaseForFind: true
+    useSmartcaseForSearch: true
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":

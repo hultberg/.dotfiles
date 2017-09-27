@@ -1,1 +1,38 @@
-# snippets file (not found)
+'.text.html.vue,.source.js':
+    'import':
+        'prefix': 'imp'
+        'body': """
+import $1 from '$2';    
+"""
+    
+    'vuedata':
+        'prefix': 'da'
+        'body': """
+  data() {
+    return {
+      $1
+    };
+  },
+"""
+    'vuehook':
+        'prefix': 'lh'
+        'body': """
+  ${1:hook}() {
+    $2
+  },
+"""
+    'vueobject':
+        'prefix': 'obj'
+        'body': """
+  ${1:key}: {
+    $2
+  },
+"""
+
+    'vuemethod':
+        'prefix': 'me'
+        'body': """
+    ${1:methodName}($2) {
+      $3
+    },
+"""
