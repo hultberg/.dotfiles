@@ -55,7 +55,7 @@ plugins=(git)
 plugins=(you-should-use $plugins)
 
 if [ -d "$HOME/bin" ] ; then
-  PATH="$PATH:$HOME/bin"
+  PATH="$HOME/bin:$PATH"
 fi
 
 if [[ -d "$HOME/.gem/ruby/2.4.0/bin" ]]; then
