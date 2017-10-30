@@ -1,6 +1,13 @@
 "*":
+  "atom-autocomplete-php":
+    binComposer: "/usr/bin/composer"
+    gotoKey: "ctrl"
+    insertNewlinesForUseStatements: true
   "atom-clock":
     dateFormat: "HH:mm"
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
       abaseColor: "#2196f3"
@@ -47,11 +54,10 @@
       "update-package-dependencies"
       "welcome"
       "atom-clock"
-      "wakatime"
-      "php-debug"
       "ide-php"
       "ide-vue"
-      "atom-ide-ui"
+      "php-twig"
+      "dalek"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -79,7 +85,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
+    fontSize: 17
     lineHeight: 2.05
     scrollPastEnd: true
     showIndentGuide: true
@@ -112,6 +118,8 @@
     preserveLastSearch: true
   hyperclick:
     linuxTriggerKeys: "shiftKey,ctrlKey"
+  "ide-php":
+    phpPath: "/usr/local/bin/php"
   linter:
     lintOnChange: false
     lintOnChangeInterval: 400
@@ -125,10 +133,9 @@
     disableWhenNoConfigFile: true
     executablePath: "~/.composer/vendor/bin/phpcs"
   "linter-phpmd":
+    autoExecutableSearch: false
     executablePath: "/home/edvin/.config/composer/vendor/bin/phpmd"
-    rulesets: "cleancode,codesize,unusedcode"
   "linter-ui-default":
-    hidePanelWhenEmpty: true
     panelHeight: 300
   "markdown-preview": {}
   minimap:
@@ -187,7 +194,7 @@
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
-    sequentialPaste: true
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true

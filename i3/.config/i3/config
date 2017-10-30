@@ -10,22 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Run compton in the background.
-exec --no-startup-id compton -CGb
-
-# Set correct display configuration
-exec --no-startup-id bash -c ~/.screenlayout/layout.sh
-
-# Wallpaper
-exec --no-startup-id bash -c ~/.config/i3/bin/background.sh
-
-# Notifications
-exec --no-startup-id dunst -config ~/.dunstrc
-
-# Run own setup script.
-exec --no-startup-id bash -c ~/.setup.sh
-
-# Start polybars
-exec_always --no-startup-id bash -c ~/.start_polybar.sh
+exec bash -c ~/.setup.sh
+exec bash -c ~/.start_polybar.sh
 
 set $mod Mod4
 
@@ -197,9 +183,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrevious exec playerctl previous
+bindsym XF86AudioPlay exec playerctl-cmus play-pause
+bindsym XF86AudioNext exec playerctl-cmus next
+bindsym XF86AudioPrevious exec playerctl-cmus previous
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
