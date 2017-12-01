@@ -5,11 +5,13 @@
 icon_playing=""
 icon_paused=""
 
-player_status=$(playerctl status 2> /dev/null)
-player_status=${player_status,,}
+player_status=$(playerctl-cmus status 2> /dev/null)
+
 if [[ $? -eq 0 ]]; then
-    metadata="$(playerctl metadata artist) - $(playerctl metadata title)"
+    metadata="$(playerctl-cmus metadata artist) - $(playerctl-cmus metadata title)"
 fi
+
+player_status=${player_status,,}
 
 # Foreground color formatting tags are optional
 if [[ $player_status = "playing" ]]; then
