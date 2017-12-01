@@ -56,8 +56,8 @@
       "atom-clock"
       "ide-php"
       "ide-vue"
-      "php-twig"
       "dalek"
+      "php-integrator-navigation"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -114,6 +114,8 @@
       "node_modules"
       "storage/**/*"
       ".idea"
+      "vendor/umpirsky/**/*"
+      "vendor/webpatser/**/*"
     ]
     preserveLastSearch: true
   hyperclick:
@@ -187,7 +189,6 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
-    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true
