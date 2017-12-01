@@ -2,6 +2,7 @@
 source ~/.vim/plugins.vim
 
 set shell=zsh\ -l
+"set rtp+=/usr/bin/fzf
 
 syntax on
 
@@ -65,7 +66,7 @@ nmap <Leader><Leader>s 0
 nnoremap bu :buffers<CR>:buffer<Space>
 
 " Shortcut for escape
-ino jj <esc>
+ino <C-J> <esc>
 
 " Shortcut to edit vimrc
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
@@ -76,6 +77,9 @@ nmap <Leader>w :tabclose<cr>
 
 " Open tab like chrome-ish
 nmap <Leader>t :tabedit<cr>
+
+nmap <C-P> :FZF<cr>
+imap <C-P> :FZF<cr>
 
 " NERDTree
 nmap <Leader>nt :NERDTreeToggle<cr>
@@ -155,6 +159,11 @@ set directory=~/.vim/swap/
 
 set undodir=~/.vim/undo/
 set undofile
+
+augroup filetypedetect
+  " Mail
+  autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
+augroup END
 
 " -------------- Auto-command --------------
 

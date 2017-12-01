@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'Vundlevim/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf.vim'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'tpope/vim-surround'

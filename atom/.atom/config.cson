@@ -46,7 +46,6 @@
       "language-ruby"
       "language-ruby-on-rails"
       "language-toml"
-      "language-xml"
       "link"
       "open-on-github"
       "package-generator"
@@ -58,6 +57,7 @@
       "ide-vue"
       "dalek"
       "php-integrator-navigation"
+      "github"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -172,7 +172,9 @@
     executeOnSave: true
     pathMode: "intersection"
   "php-debug":
+    GutterBreakpointToggle: false
     ServerAddress: "0.0.0.0"
+    currentPanelHeight: "275px"
     currentPanelMode: "bottom"
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
@@ -195,7 +197,6 @@
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true
