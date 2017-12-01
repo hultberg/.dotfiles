@@ -46,7 +46,6 @@
       "language-ruby"
       "language-ruby-on-rails"
       "language-toml"
-      "language-xml"
       "link"
       "open-on-github"
       "package-generator"
@@ -56,8 +55,8 @@
       "atom-clock"
       "ide-php"
       "ide-vue"
-      "php-twig"
       "dalek"
+      "github"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -170,7 +169,9 @@
     executeOnSave: true
     pathMode: "intersection"
   "php-debug":
+    GutterBreakpointToggle: false
     ServerAddress: "0.0.0.0"
+    currentPanelHeight: "275px"
     currentPanelMode: "bottom"
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
@@ -187,14 +188,12 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
-    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true

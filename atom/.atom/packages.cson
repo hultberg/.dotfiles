@@ -40,7 +40,6 @@ packages: [
   "php-integrator-annotations"
   "php-integrator-autocomplete-plus"
   "php-integrator-base"
-  "php-integrator-navigation"
   "php-integrator-refactoring"
   "php-twig"
   "project-manager"
