@@ -58,6 +58,7 @@
       "dalek"
       "php-integrator-navigation"
       "github"
+      "linter-phpmd"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -191,6 +192,7 @@
   "time-for-break":
     timeBetween: 1
   "tree-view":
+    autoReveal: true
     focusOnReveal: false
   "vim-mode":
     useSmartcaseForSearch: true

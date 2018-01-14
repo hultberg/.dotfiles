@@ -1,3 +1,29 @@
+'.source.php':
+    'array_item':
+        'prefix': 'ai'
+        'body': """
+'${1:key}' => $2,
+"""
+    
+    'array_parent':
+        'prefix': 'ap'
+        'body': """
+'${1:key}' => [
+    $2
+],
+"""
+    
+    'class':
+        'prefix': 'cl'
+        'body': """
+namespace CC\\\\$1;
+
+class $2
+{
+    $3
+}
+"""
+
 '.text.html.vue,.source.js':
     'import':
         'prefix': 'imp'

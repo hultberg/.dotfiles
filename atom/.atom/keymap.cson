@@ -1,4 +1,4 @@
-'atom-text-editor':
+'atom-workspace':
     'ctrl--': 'advanced-open-file:toggle'
 'atom-text-editor.vim-mode-plus.normal-mode':
     'ctrl-r': 'symbols-view-plus:toggle-file-symbols' 
