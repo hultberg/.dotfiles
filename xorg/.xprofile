@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+setxkbmap no
+setxkbmap -option caps:super

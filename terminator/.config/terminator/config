@@ -1,5 +1,4 @@
 [global_config]
-  borderless = True
 [keybindings]
 [layouts]
   [[default]]
@@ -16,5 +15,6 @@
     background_color = "#111111"
     cursor_color = "#aaaaaa"
     foreground_color = "#839496"
+    icon_bell = False
     scrollback_infinite = True
     show_titlebar = False

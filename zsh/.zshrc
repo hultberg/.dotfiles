@@ -51,11 +51,15 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 plugins=(you-should-use $plugins)
 
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+  PATH="$HOME/.local/bin:$PATH"
 fi
 
 if [[ -d "$HOME/.gem/ruby/2.4.0/bin" ]]; then

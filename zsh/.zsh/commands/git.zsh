@@ -21,7 +21,18 @@ alias gcp='git cherry-pick -x'
 alias grcf='git reset HEAD --hard && git clean -f -d'
 alias gpsh='git push -u origin HEAD'
 
-function gclc {
-	git add changelogs/
+###
+# Add all unstaged changelogs, replace author and ammend the previous commit with the changelog entries.
+###
+function gca {
+	git add .changelogs/
+	git commit --amend --no-edit
+}
+
+###
+# Same as "gca", but creates a new commit for changelog entries.
+###
+function gcc {
+	git add .changelogs/
 	git commit -m ":memo: update changelog" -m "[ci skip]"
 }

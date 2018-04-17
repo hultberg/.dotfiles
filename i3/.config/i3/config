@@ -9,10 +9,6 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Run compton in the background.
-exec bash -c ~/.setup.sh
-exec bash -c ~/.start_polybar.sh
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -28,7 +24,10 @@ bindsym $mod+d exec rofi -show run -lines 5 -width 30 -bw 3
 
 bindsym --release $mod+z exec scrot '%Y-%m-%d_$wx$h.png' --select -e 'mv $f ~/shots/'
 
-bindsym --release $mod+Shift+l exec ~/.config/i3/bin/lock.py
+bindsym --release $mod+Shift+l exec xscreensaver-command -l
+
+exec --no-startup-id ~/.start_polybar.sh
+exec --no-startup-id compton -CGb
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1

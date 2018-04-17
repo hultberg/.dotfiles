@@ -102,4 +102,4 @@ shelltitle '% |zsh'
 altscreen on
 bell_msg "Bell in window %n^G"
 startup_message off
-scrollback 10000
+defscrollback 100000
