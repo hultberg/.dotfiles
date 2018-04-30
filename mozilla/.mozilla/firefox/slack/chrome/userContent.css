@@ -1,0 +1,6 @@
+@-moz-document url-prefix("about:") {
+	* {
+		color: #F9F9FA !important;
+		background-color: #0C0C0C !important;
+	}
+}
