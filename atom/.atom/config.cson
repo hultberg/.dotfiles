@@ -7,10 +7,9 @@
     dateFormat: "HH:mm"
   "atom-ide-ui":
     use:
-      "atom-ide-diagnostics-ui": false
+      "atom-ide-diagnostics-ui": "never"
   "atom-material-ui":
     colors:
-      abaseColor: "#2196f3"
       predefinedColor: "Blue"
     fonts:
       fontSize: 14
@@ -59,6 +58,8 @@
       "php-integrator-navigation"
       "github"
       "linter-phpmd"
+      "php-cs-fixer"
+      "php-debug"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -70,6 +71,8 @@
       "Thumbs.db"
       "desktop.ini"
       "node_modules"
+      "tests/shared/**/*"
+      "resources/shared/**/*"
       "storage/**/*"
       ".idea"
     ]
@@ -86,7 +89,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Fira Code"
-    fontSize: 17
+    fontSize: 15
     lineHeight: 2.05
     scrollPastEnd: true
     showIndentGuide: true
@@ -179,9 +182,9 @@
     currentPanelMode: "bottom"
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
-    core: {}
-    general:
-      indexContinuously: false
+    core:
+      memoryLimit: 2048
+    general: {}
     linting:
       showMissingDocs: false
   "php-integrator-base:confirmed-upgrade-message": true

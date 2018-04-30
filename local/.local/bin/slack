@@ -1,0 +1,2 @@
+#! /bin/sh
+exec firefox -profile $HOME/.mozilla/firefox/slack/ -no-remote &> $HOME/.output.firefox-slack
