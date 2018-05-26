@@ -35,7 +35,6 @@
       "whitespace"
       "language-blueberry"
       "image-view"
-      "language-c"
       "language-clojure"
       "language-csharp"
       "language-mustache"
@@ -59,7 +58,6 @@
       "github"
       "linter-phpmd"
       "php-cs-fixer"
-      "php-debug"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -89,7 +87,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
+    fontSize: 17
     lineHeight: 2.05
     scrollPastEnd: true
     showIndentGuide: true
