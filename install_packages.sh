@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo pacman -S exa ack terminator 
+pacaur -S exa ack terminator diff-so-fancy
