@@ -51,13 +51,8 @@
       "update-package-dependencies"
       "welcome"
       "atom-clock"
-      "ide-php"
-      "ide-vue"
-      "dalek"
-      "php-integrator-navigation"
       "github"
       "linter-phpmd"
-      "php-cs-fixer"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -176,8 +171,11 @@
   "php-debug":
     GutterBreakpointToggle: false
     ServerAddress: "0.0.0.0"
-    currentPanelHeight: "275px"
+    currentPanelHeight: "439px"
     currentPanelMode: "bottom"
+  "php-ide-serenata":
+    linting:
+      showMissingDocs: false
   "php-integrator-autocomplete-plus": {}
   "php-integrator-base":
     core:

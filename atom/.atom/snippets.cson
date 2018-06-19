@@ -16,9 +16,40 @@
     'class':
         'prefix': 'cl'
         'body': """
+declare(strict_types=1);        
+
 namespace CC\\\\$1;
 
 class $2
+{
+    $3
+}
+"""
+        
+    'boilerplate_test':
+        'prefix': 'cct'
+        'body': """
+declare(strict_types=1);        
+
+namespace CC\\\\Tests\\\\$1;
+
+use CC\\\\Tests\\\\TestCase;
+
+class $2 extends TestCase
+{
+    $3
+}
+"""
+    'boilerplate_db_test':
+        'prefix': 'cctd'
+        'body': """
+declare(strict_types=1);    
+
+namespace CC\\\\Tests\\\\$1;
+
+use CC\\\\Tests\\\\DatabaseTestCase;
+
+class $2 extends DatabaseTestCase
 {
     $3
 }

@@ -1,5 +1,6 @@
 packages: [
   "advanced-open-file"
+  "atom-clock"
   "atom-debug-ui"
   "atom-ide-ui"
   "atom-material-syntax"
