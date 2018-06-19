@@ -1,3 +1,5 @@
+[include]
+	path = ~/.git/conf.d/localconfig
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	st = status
@@ -6,10 +8,6 @@
 [core]
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[user]
-	email = hultberg@mittnett.net
-	name = Edvin Hultberg
-	signingkey = 9C6170166133EFF7
 [commit]
 	#gpgsign = true
 [color]
