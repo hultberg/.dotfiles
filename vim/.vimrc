@@ -59,10 +59,6 @@ set incsearch
 " https://stackoverflow.com/a/7078429
 cmap w!! w !sudo tee > /dev/null %
 
-" Go to end of line
-nmap <Leader><Leader>e $
-nmap <Leader><Leader>s 0
-
 nnoremap bu :buffers<CR>:buffer<Space>
 
 " Shortcut for escape
