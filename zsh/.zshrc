@@ -105,4 +105,4 @@ if [[ -e "/home/"$(whoami)"/.zshrc.local" ]]; then
 	source "/home/"$(whoami)"/.zshrc.local"
 fi
 
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
