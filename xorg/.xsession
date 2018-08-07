@@ -13,5 +13,3 @@ dunst -config ~/.dunstrc &
 
 # Background images.
 #~/.config/i3/bin/background.sh &
-
-xscreensaver -nosplash &
