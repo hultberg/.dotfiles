@@ -3,7 +3,7 @@ Description=XScreenSaver
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/xscreensaver --no-splash
+ExecStart=/usr/bin/xscreensaver -no-splash
 
 [Install]
 WantedBy=graphical.target
