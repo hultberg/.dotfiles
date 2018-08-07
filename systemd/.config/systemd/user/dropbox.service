@@ -1,0 +1,10 @@
+[Unit]
+Description=Dropbox
+After=local-fs.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/edvin/.dropbox-dist/dropboxd
+
+[Install]
+WantedBy=graphical.target
