@@ -1,10 +1,10 @@
 [Unit]
-Description=Dropbox
+Description=Dunst Notification Manager
 After=local-fs.target network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/dropbox
+ExecStart=/usr/bin/dunst -config /home/edvin/.dunstrc
 
 [Install]
 WantedBy=user-graphical-login.target

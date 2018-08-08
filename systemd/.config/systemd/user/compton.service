@@ -1,10 +1,10 @@
 [Unit]
-Description=Dropbox
+Description=Compton
 After=local-fs.target network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/dropbox
+ExecStart=/usr/bin/compton -CbG
 
 [Install]
 WantedBy=user-graphical-login.target

@@ -20,9 +20,10 @@ set $mod Mod4
 #font pango:monospace 8
 #
 
-exec --no-startup-id ~/.start_polybar.sh
-exec --no-startup-id compton -CbG
-exec --no-startup-id redshift
+#exec --no-startup-id ~/.start_polybar.sh
+#exec --no-startup-id compton -CbG
+#exec --no-startup-id redshift
+exec --no-startup-id ~/.config/i3/bin/systemd_start.sh
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

@@ -55,7 +55,7 @@ inherit = bar/base
 tray-position = right
 modules-left = i3 xwindow
 modules-center =  
-modules-right = music filesystem volume memory cpu temperature eth redshift pacman date
+modules-right = music filesystem volume memory cpu temperature battery eth redshift pacman date
 
 [bar/right]
 monitor = ${env:POLYBAR_MONITOR:DVI-D-0}
@@ -216,7 +216,8 @@ label = %percentage_used%%
 
 [module/eth]
 type = internal/network
-interface = enp0s31f6
+#interface = enp0s31f6
+interface= enp2s0
 interval = 3.0
 
 format-connected-prefix = " "
@@ -297,6 +298,28 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT1
+adapter = ACAD
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
 
 [module/powermenu]
 type = custom/menu

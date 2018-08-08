@@ -6,4 +6,4 @@ Type=simple
 ExecStart=/usr/bin/xscreensaver -nosplash
 
 [Install]
-WantedBy=graphical.target
+WantedBy=user-graphical-login.target

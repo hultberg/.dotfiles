@@ -1,0 +1,11 @@
+[Unit]
+Description=Polybar
+After=local-fs.target network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/home/edvin/.config/polybar/monitors/%i.conf
+ExecStart=/usr/bin/polybar --quiet $BAR
+
+[Install]
+WantedBy=user-graphical-login.target
