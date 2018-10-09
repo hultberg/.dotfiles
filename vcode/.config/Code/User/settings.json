@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "php.suggest.basic": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "breadcrumbs.enabled": true
+}
